@@ -15,20 +15,20 @@ module load profile/deeplrn
 # export OMP_PROC_BIND=true
 export HF_DATASETS_CACHE=$WORK/hf_cache_lm
 
-source ~/__Work/llmfoundry-cuda-flash-attn2-env/bin/activate
+source ~/__Work/llm-data-analysis/.env/bin/activate
 
-#~/__Work/llmfoundry-cuda-flash-attn2-env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
+#~/__Work/llm-data-analysis/.env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
 #    --dataset_path /leonardo_work/IscrB_medit/culturax_res/reservoir_sample_10M_100M/en/web \
 #     --max_iterations 10
 
-#~/__Work/llmfoundry-cuda-flash-attn2-env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
+#~/__Work/llm-data-analysis/.env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
 #    --dataset_path /leonardo_work/IscrB_medit/culturax_res/reservoir_sample_10M_100M/it/web \
 #     --max_iterations 10
 
-~/__Work/llmfoundry-cuda-flash-attn2-env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
+~/__Work/llm-data-analysis/.env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
     --dataset_path /leonardo_work/IscrB_medit/culturax_res/reservoir_hq_85M/en \
 #     --max_iterations 10
 
-#~/__Work/llmfoundry-cuda-flash-attn2-env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
+#~/__Work/llm-data-analysis/.env/bin/python /leonardo/home/userexternal/lmoroni0/__Work/llm-foundry/scripts/data_prep/extract_urls.py \
 #   --dataset_path /leonardo_work/IscrB_medit/culturax_res/reservoir_hq_85M/it \
 #     --max_iterations 10
